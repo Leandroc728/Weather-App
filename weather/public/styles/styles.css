@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* All the styles */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+    align-items: center;
+    margin-top: 2em;
+    padding: 2em 3em;
+    background: linear-gradient(90deg, #3663F5, #36C8F5);
+}
+
+.locals {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestion-btn, .get-btn  {
+    padding: .5em 1em;
+    border: none;
+    border-radius: 10em;
+    color: white;
+    transition: background-color .7s ease;
+}
+
+.suggestion-btn {
+    background-color: #3F5C61;
+}
+
+.suggestion-btn:hover {
+    background-color: #5a8086;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-inp {
+    padding: .2em .4em;
+    outline: none;
+    border: none;
+    border-radius: 10em;
+}
+
+.get-btn {
+    background-color: rgb(0, 0, 197);
+}
+
+.get-btn:hover {
+    background-color: rgb(47, 47, 219);
+    cursor: pointer;
+}
+
+.weather {
+    margin-top: 3em;
+}
+
+.weather, .weather-now {
+    width: 100%;
+}
+
+.degrees {
+    display: flex;
+    width: 100%;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.options {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.options p{
+    color: white;
+    transition: color .7s ease;
+    margin: .6em 0;
+}
+
+.options p:hover{
+    color: rgb(75, 200, 241);
+    cursor: pointer;
+}
+
+.units {
+    display: flex;
+}
+
+.units span {
+    padding: 0 .8em;
+    color: white;
+    transition: color .7s ease;
+}
+
+.changeSpanColor {
+    color:rgb(75, 200, 241)!important;
+}
+
+.units span:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    .locals {
+        display: none;
+    }
+
+    .main {
+        min-width: 410px;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+
+    .units {
+        margin: 1em 0;
+    }
+
+    .degrees {
+        flex-direction: column;
+    }
+
+    .degrees div {
+        width: 100%;
+    }
+}

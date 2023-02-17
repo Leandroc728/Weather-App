@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/styles/styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <main class="main" id="main">
+
+        <div class="locals" id="locals">
+            <button class="suggestion-btn">New York</button>
+            <button class="suggestion-btn">Hawaii</button>
+            <button class="suggestion-btn">Moscow</button>
+            <button class="suggestion-btn">Mexico city</button>
+            <button class="suggestion-btn">Vancouver</button>
+        </div>
+
+        <div class="search" id="search">
+
+            <form id="search-form" action="">
+                <input id="search-inp" class="search-inp" type="search" placeholder="Search..." >
+                <span id="warning"></span>
+            </form>
+
+            <div class="units" id="temp-units">
+                <span class="units-btn">C</span>
+                <span class="units-btn" style="border-left: 1px white solid;">F</span>
+            </div>
+
+            <div>
+                <button class="get-btn" id="getBtn">Weather Here</button>
+            </div>
+            
+        </div>
+
+        <div class="weather" id="weather">
+            <div class="weather-now">     
+            </div>
+        </div>
+
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
